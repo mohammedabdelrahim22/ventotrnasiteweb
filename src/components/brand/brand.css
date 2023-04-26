@@ -1,0 +1,13 @@
+.after_card:after {
+  content: "|";
+  height: 100px;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  right: -125px;
+  top: 1px;
+  overflow: hidden;
+}
+.d-inline {
+  display: inline;
+}

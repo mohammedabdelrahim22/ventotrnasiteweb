@@ -1,0 +1,43 @@
+.play-button {
+  background-color: #fff;
+}
+/* .header {
+  background-color: gray;
+} */
+.header {
+  background-image: url("../../assets/header/Image 12.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+nav {
+  box-shadow: 3px 9px 10px #d9cdcd;
+}
+.img_show {
+  min-height: 39vh;
+}
+
+.header_text .after:after {
+  background: url(/src/assets/header/Path.png) no-repeat;
+  bottom: -57px;
+  content: "";
+  height: 69.77px;
+  left: -3px;
+  position: absolute;
+  width: 339px;
+  overflow: hidden;
+}
+.gray_div {
+  background-color: #222222;
+}
+.back_black {
+  background-color: #000000;
+  min-height: 191px;
+}
+.card:before {
+  content: "|";
+  width: 2px;
+  height: 93px;
+  background-color: gray;
+  position: absolute;
+  left: -2px;
+}

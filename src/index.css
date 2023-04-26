@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Sigmar&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Sigmar&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_color {
+  color: #f5a34c;
+}
+.main_background {
+  background: #f5a34c;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.sub_font {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  color: #000000;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0;
+  font-family: "Sigmar", cursive;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}

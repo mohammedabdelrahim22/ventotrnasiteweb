@@ -1,0 +1,40 @@
+.slick-active {
+  margin-right: 10px;
+}
+.slider_card {
+  box-shadow: 9px 12px 10px #d5c9c933;
+}
+.slick-slide {
+  padding-bottom: 20px;
+}
+.slick-slider .slick-prev {
+  background: black;
+  top: 151px;
+  width: 40px;
+  height: 40px;
+  left: -50px;
+  border-radius: 10%;
+}
+.slick-slider .slick-next {
+  background: black;
+  top: 151px;
+  width: 40px;
+  height: 40px;
+  right: -51px;
+  border-radius: 10%;
+}
+.slick-slider .slick-prev:hover {
+  background: black;
+}
+.slick-slider {
+  outline: none;
+}
+.slick-slider .slick-arrow {
+  background: black !important;
+}
+.left_side {
+  padding-right: 31px;
+}
+.slick-list {
+  height: 371px;
+}
