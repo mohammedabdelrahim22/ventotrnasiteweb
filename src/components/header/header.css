@@ -41,3 +41,15 @@ nav {
   position: absolute;
   left: -2px;
 }
+@media only screen and (max-width: 600px) {
+  .back_black {
+    position: unset;
+  }
+  .card:before {
+    position: unset;
+    content: "";
+  }
+  .gray_div {
+    background: unset;
+  }
+}

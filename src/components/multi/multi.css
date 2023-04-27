@@ -2,11 +2,77 @@
   background-color: #f5a34c;
   height: 100%;
   border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .progress-bar {
   height: 10px;
   background: #efefef;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
+}
+.border_div {
+  background: transparent;
+  border: 7px solid #efefef;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.1em;
+  border: none;
+  /* border-radius: 3px; */
+  background: #efefef;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background: #000000 !important;
+  margin-top: -8px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+.bord {
+  border: none;
+  border-bottom: 1px solid #f5a34c !important;
+  outline: none !important;
+}
+input:focus {
+  outline: none !important;
+}
+select {
+  border: none !important;
+  border-bottom: 1px solid #f5a34c !important;
+  outline: none !important;
+}
+select:focus {
+  border: none !important;
+  outline: none !important;
+}
+select:active {
+  border: none !important;
+  outline: none !important;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #f5a34c;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  cursor: pointer;
+  outline: none !important;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f5a34c !important;
+  border-color: #f5a34c !important;
+  outline: none !important;
 }

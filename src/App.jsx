@@ -1,24 +1,19 @@
 
-import Header from './components/header/Header'
-import Brand from './components/brand/Brand'
-import Community from './components/community/Community'
-import Spot from './components/spot/Spot'
-import Scale from './components/scale/Scale'
-import Filter from './components/filter/filter'
-import Footer from './components/footer/footer'
-import MultiStepForm from './components/multi/multi'
+import MultiStepForm from './components/multi/multi';
+import Index from './components/index'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className='overflow-hidden'>
-      <Header />
-      <Brand />
-      <Community />
-      <Spot />
-      <Scale />
-      <Filter />
-      <Footer />
-      <MultiStepForm />
-    </div>
+    <Router>
+      <div className='app overflow-hidden'>
+        <Routes>
+
+          <Route path="/" exact element={<Index />} />
+          <Route path="/MultiStepForm" element={<MultiStepForm />} />
+
+        </Routes>
+      </div>
+    </Router>
 
   )
 }

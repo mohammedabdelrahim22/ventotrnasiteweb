@@ -11,3 +11,9 @@
 .d-inline {
   display: inline;
 }
+@media only screen and (max-width: 600px) {
+  .after_card:after {
+    content: "";
+    display: none;
+  }
+}

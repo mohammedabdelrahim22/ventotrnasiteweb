@@ -1,10 +1,11 @@
 import './brand.css'
 import { Cards } from "../../constans/constans"
+import { Link } from 'react-router-dom'
 function Brand() {
     return (
         <div className='brand mt-[80px]'>
             <div className="flex w-[100%] justify-center">
-                <div className="grid grid-cols-2 sm:grid-cols-2 w-[70%]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 w-[70%]">
                     <div className="p-4 w-[40%] relative">
                         <h3 className="after_card main_color text-[40px] sub_font relative">
                             Tailored
@@ -33,15 +34,17 @@ function Brand() {
             </div>
             <div className='cards mt-[30px]'>
                 <div className=" p-5 mt-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ">
-                        <div className="w-full sm:basis-1/2 p-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2">
+                        <div className="p-4">
                             <p className='text-[20px] main_color sub_font'>Our Bread And Butter</p>
                             <h3 className='text-[40px] text-black sub_font'>We Build A Brand That Resonates With Your Niche</h3>
                             <p className='text-[20px] main_color font-bold sub_font'>Roadmap</p>
-                            <button class="main_background p-2 rounded-[16px] w-[200px] mt-5 text-white font-bold sub_font text-[20px] flex justify-evenly">Get started<span><svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title></title><g id="Complete"><g id="arrow-up-right"><g><polyline data-name="Right" fill="none" id="Right-2" points="18.7 12.4 18.7 5.3 11.6 5.3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline><line fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="5.3" x2="17.1" y1="18.7" y2="6.9"></line></g></g></g></svg></span></button>
+                            <Link to='/MultiStepForm'>
+                                <button className="main_background p-2 rounded-[16px] w-[200px] mt-5 text-white font-bold sub_font text-[20px] flex justify-evenly">Get started<span><svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title></title><g id="Complete"><g id="arrow-up-right"><g><polyline data-name="Right" fill="none" id="Right-2" points="18.7 12.4 18.7 5.3 11.6 5.3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline><line fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="5.3" x2="17.1" y1="18.7" y2="6.9"></line></g></g></g></svg></span></button>
+                            </Link>
                         </div>
-                        <div className="w-full sm:basis-1/2">
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 h-full">
+                        <div className="">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 h-full">
                                 {Cards.map((card) => {
                                     return (
                                         <div className="bg-gray-300 rounded-[10px] " key={card.id}>
@@ -71,8 +74,6 @@ function Brand() {
                                         </div>
                                     )
                                 })}
-
-
                             </div>
                         </div>
                     </div>

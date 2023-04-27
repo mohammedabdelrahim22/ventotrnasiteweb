@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './filter.css'
+import { Link } from 'react-router-dom'
 const Filter = () => {
     const [rangeValue, setRangeValue] = useState(100000);
 
@@ -47,7 +48,9 @@ const Filter = () => {
                             </div>
                             <span className="p-2 flex items-end pl-7">
                                 <a href="#">
-                                    <button className="main_background p-2 rounded-[16px]  w-[200px] text-white font-bold sub_font text-[20px] flex justify-evenly">Make It Happen<span><svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title></title><g id="Complete"><g id="arrow-up-right"><g><polyline data-name="Right" fill="none" id="Right-2" points="18.7 12.4 18.7 5.3 11.6 5.3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline><line fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="5.3" x2="17.1" y1="18.7" y2="6.9"></line></g></g></g></svg></span></button>
+                                    <Link to='/MultiStepForm'>
+                                        <button className="main_background p-2 rounded-[16px]  w-[200px] text-white font-bold sub_font text-[20px] flex justify-evenly">Make It Happen<span><svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title></title><g id="Complete"><g id="arrow-up-right"><g><polyline data-name="Right" fill="none" id="Right-2" points="18.7 12.4 18.7 5.3 11.6 5.3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline><line fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="5.3" x2="17.1" y1="18.7" y2="6.9"></line></g></g></g></svg></span></button>
+                                    </Link>
                                 </a>
                             </span>
                         </div>

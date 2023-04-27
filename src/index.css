@@ -21,6 +21,10 @@ body {
 .sub_font {
   font-family: "Roboto", sans-serif;
 }
+.time_active {
+  background: #f5a34c;
+  color: #fff;
+}
 p {
   color: #000000;
 }
