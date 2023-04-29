@@ -4,31 +4,41 @@ import { Link } from 'react-router-dom'
 function Brand() {
     return (
         <div className='brand mt-[80px]'>
-            <div className="flex w-[100%] justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 w-[70%]">
-                    <div className="p-4 w-[40%] relative">
-                        <h3 className="after_card main_color text-[40px] sub_font relative">
+            <div className="flex justify-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 w-11/12 sm:w-3/4 md:w-3/4">
+                    <div className="p-4 w-3/5 md:w-2/5 relative">
+                        <h3 className="after_card main_color text-4xl md:text-5xl sub_font relative">
                             Tailored
                             <br />
                             Tactics
                         </h3>
                     </div>
                     <div className="p-4">
-                        <h3 className="text-black text-[30px] sub_font">
+                        <h3 className="text-black text-3xl md:text-4xl sub_font">
                             Customized Marketing And Strategic <span className="main_color">
                                 Management
                             </span>
                             <br />
                             Start
                             <span>
-                                <svg width="50px" height="50px" className='d-inline' viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.43200000000000005"></g><g id="SVGRepo_iconCarrier">
-                                    <title>
-                                    </title> <g id="Complete"> <g id="arrow-right"> <g> <polyline data-name="Right" fill="none" id="Right-2" points="16.4 7 21.5 12 16.4 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.504"></polyline> <line fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.504" x1="2.5" x2="19.2" y1="12" y2="12"></line> </g> </g> </g> </g></svg>
+                                <svg width="50px" height="50px" className='inline-block' viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000">
+                                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.432"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title></title>
+                                        <g id="Complete">
+                                            <g id="arrow-right">
+                                                <g>
+                                                    <polyline data-name="Right" fill="none" id="Right-2" points="16.4 7 21.5 12 16.4 17" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.504"></polyline>
+                                                    <line fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.504" x1="2.5" x2="19.2" y1="12" y2="12"></line>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
                             </span>
                             Finish.
-
                         </h3>
-
                     </div>
                 </div>
             </div>
@@ -44,35 +54,29 @@ function Brand() {
                             </Link>
                         </div>
                         <div className="">
-                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 h-full">
+                            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                                 {Cards.map((card) => {
                                     return (
-                                        <div className="bg-gray-300 rounded-[10px] " key={card.id}>
-                                            <div className='flex items-center justify-between w-full flex-wrap'>
-                                                <div className='first_div  p-2'>
-                                                    <span className='bg-black w-[50px] h-[50px] rounded-[50%] flex justify-center items-center text-white'>
-                                                        <h5 className='sub_font'>
-                                                            {card.number}
-                                                        </h5>
+                                        <div className="bg-gray-300 rounded-md" key={card.id}>
+                                            <div className="flex items-center justify-between">
+                                                <div className="p-2">
+                                                    <span className="bg-black w-12 h-12 rounded-full flex justify-center items-center text-white">
+                                                        <h5 className="sub_font">{card.number}</h5>
                                                     </span>
                                                 </div>
-                                                <div className='second_div text-center pr-[5px]'>
-                                                    <span className='main_background w-[50px] h-[50px] rounded-[50%] flex justify-center items-center text-white '>
-                                                        <h5 className='sub_font'>
-                                                            {card.number}
-                                                        </h5>
-                                                    </span>
-                                                </div>
+                                                <div className="text-center pr-5">
+                                                    <span className="main_background w-12 h-12 rounded-full flex justify-center items-center text-white">
+                                                        <h5 className="sub_font flex justify-center">
 
+                                                            <img className='object-cover w-[80%]' src={card.icon} />
+                                                        </h5>
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <h3 className='text-[25px] sub_font p-2 text-black'>
-                                                {card.title}
-                                            </h3>
-                                            <p className='text-[15px] p-2 text-[##000000]'>
-                                                {card.desc}
-                                            </p>
+                                            <h3 className="text-lg sub_font p-2 text-black">{card.title}</h3>
+                                            <p className="text-sm p-2 text-[##000000]">{card.desc}</p>
                                         </div>
-                                    )
+                                    );
                                 })}
                             </div>
                         </div>

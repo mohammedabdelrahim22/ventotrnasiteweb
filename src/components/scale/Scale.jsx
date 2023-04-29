@@ -1,5 +1,6 @@
 import './scale.css'
 import logo from '../../assets/logo/logo.png'
+import { scale_div, scale_div_two } from '../../constans/constans'
 function Scale() {
     return (
         <div className="scale p-5 mt-[60px]">
@@ -11,35 +12,21 @@ function Scale() {
                     How We Scale It.
                 </h2>
             </div>
-            <div className='grid grid-col-1 sm:grid-cols-2 gap-9 mt-5'>
+            <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-9 mt-5'>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 after_style relative">
                     <div className="col-span-1  z-10">
                         <div className="grid grid-rows-2 gap-4 z-10">
-                            <div className="row-span-1 bg-[#000000] p-6 z-10 rounded-[20px]">
-                                <h2 className='main_color text-[30px] font-bold sub_font'>
-                                    $605,000
-                                </h2>
-                                <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
-                                    Trial Amount Raised
-                                </h4>
-                            </div>
-                            <div className="row-span-1 bg-[#000000] p-6  z-10 rounded-[20px]">
-                                <h2 className='main_color text-[30px] font-bold sub_font'>
-                                    $605,000
-                                </h2>
-                                <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
-                                    Trial Amount Raised
-                                </h4>
-                            </div>
-                            <div className="row-span-1 bg-[#000000] p-6  z-10 rounded-[20px]">
-                                <h2 className='main_color text-[30px] font-bold sub_font'>
-                                    $605,000
-                                </h2>
-                                <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
-                                    Trial Amount Raised
-                                </h4>
-                            </div>
-
+                            {scale_div_two.map((sa) => {
+                                return (
+                                    <div className="row-span-1 bg-[#000000] p-6 z-10 rounded-[20px]" key={sa.id}>
+                                        <h2 className='main_color text-[30px] font-bold sub_font'>
+                                            {sa.title}
+                                        </h2>
+                                        <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
+                                            {sa.desc}
+                                        </h4>
+                                    </div>)
+                            })}
                         </div>
                     </div>
                     <div className="col-span-1 p-[40px] bg-[#000000] z-10 rounded-[20px] ">
@@ -61,32 +48,23 @@ function Scale() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 after_style relative">
                     <div className="col-span-1  z-10">
-                        <div className="grid grid-rows-2 gap-4 z-10">
-                            <div className="row-span-1 bg-[#000000] p-6 z-10 rounded-[20px]">
-                                <h2 className='main_color text-[30px] font-bold sub_font'>
-                                    $605,000
-                                </h2>
-                                <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
-                                    Trial Amount Raised
-                                </h4>
-                            </div>
-                            <div className="row-span-1 bg-[#000000] p-6  z-10 rounded-[20px]">
-                                <h2 className='main_color text-[30px] font-bold sub_font'>
-                                    $605,000
-                                </h2>
-                                <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
-                                    Trial Amount Raised
-                                </h4>
-                            </div>
-                            <div className="row-span-1 bg-[#000000] p-6  z-10 rounded-[20px]">
-                                <h2 className='main_color text-[30px] font-bold sub_font'>
-                                    $605,000
-                                </h2>
-                                <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
-                                    Trial Amount Raised
-                                </h4>
-                            </div>
+
+                        <div className="grid grid-rows-2 gap-4 z-10" >
+                            {scale_div.map((sca) => {
+                                return (
+                                    <div className="row-span-1 bg-[#000000] p-6 z-10 rounded-[20px]" key={sca.id}>
+                                        <h2 className='main_color text-[30px] font-bold sub_font'>
+                                            {sca.title}
+                                        </h2>
+                                        <h4 className='text-white  opacity-75 text-[17px] pt-[10px] sub_font'>
+                                            {sca.desc}
+                                        </h4>
+                                    </div>
+                                )
+                            })}
                         </div>
+
+
                     </div>
                     <div className="col-span-1 p-[40px] bg-[#000000] z-10 rounded-[20px] ">
                         <div className='image_div'>

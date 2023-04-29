@@ -51,7 +51,6 @@ function Header() {
                             <path d="M8,5.14V19.14L19,12.14L8,5.14Z" fill="orange" />
                         </svg>
                     </button>
-
                 </div>
             </div>
             <div className='header_text w-[100%] mt-4'>
@@ -86,7 +85,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div className='w-full p-4 sm:h-[13vh] md:h-[20vh] lg:h-[13vh] xl:h-[30vh] mt-[120px] gray_div relative gap-2'>
+            <div className='w-full p-4 h-[40vh] sm:h-[12vh] md:h-[20vh] mt-[120px] gray_div relative gap-2'>
                 <div className='black_box relative w-full'>
                     <div className='div_cols relative flex justify-center'>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 w-full sm:w-[75%] md:w-[50%] absolute top-[-12vh] back_black">

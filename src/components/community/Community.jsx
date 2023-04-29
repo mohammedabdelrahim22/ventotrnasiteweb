@@ -4,7 +4,7 @@ import logo from '../../assets/logo/logo.png'
 import { Link } from 'react-router-dom'
 function Community() {
     return (
-        <div className='Community p-5 mt-[40px] bg-[#F8F8F8] "min-h-[80vh]'>
+        <div className='Community p-5 mt-[40px] bg-[#F8F8F8] min-h-[80vh]'>
 
             <div className='header_text pt-5'>
                 <p className='font-bold main_color sub_font text-[20px]'>

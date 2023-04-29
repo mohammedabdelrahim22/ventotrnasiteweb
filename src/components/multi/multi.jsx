@@ -5,6 +5,7 @@ import slide2 from '../../assets/multi/slide2.png'
 import slide3 from '../../assets/multi/slide3.png'
 import logo from '../../assets/logo/logo.png'
 import CalendarTime from '../calender/Calender'
+
 import { Link } from 'react-router-dom'
 import './multi.css'
 const MultiStepForm = () => {
@@ -314,9 +315,8 @@ const MultiStepForm = () => {
                         </div>
                     </div>
                 </div>
-            </div >
-        </div >
-
+            </div>
+        </div>
     );
 };
 export default MultiStepForm;
