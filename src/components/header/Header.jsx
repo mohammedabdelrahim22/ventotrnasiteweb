@@ -46,7 +46,7 @@ function Header() {
                 </div>
                 <div className='vedio relative'>
 
-                    <button className="play-button w-[60px] h-[60px] rounded-[50%] flex justify-center items-center absolute top-[11vh] right-[25vw] " onClick={() => setModalIsOpen(true)}>
+                    <button className="play-button w-[60px] h-[60px] rounded-[50%] flex justify-center items-center absolute top-[15vh] right-[35vw] sm:top-[20vh] sm:right-[20vh]   md:top-[10vh] md:right-[25vw]  lg:top-[11vh] lg:right-[25vw]" onClick={() => setModalIsOpen(true)}>
                         <svg width="36" height="36" viewBox="0 0 24 24">
                             <path d="M8,5.14V19.14L19,12.14L8,5.14Z" fill="orange" />
                         </svg>
