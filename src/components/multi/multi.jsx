@@ -70,21 +70,11 @@ const MultiStepForm = () => {
     const handleRangeChange5 = (event) => {
         setRangeValue5(event.target.value);
     }
-    const [isFormValid, setIsFormValid] = useState(false);
-
-    const handleInputChange = (event) => {
-        // تحديث حالة التعبئة عند تغيير أي من حقول الإدخال
-        const { name, value } = event.target;
-        setIsFormValid((prevValues) => ({
-            ...prevValues,
-            [name]: value.length > 0
-        }));
-    };
     return (
-        <div className="container flex justify-center items-center  min-h-[100vh]">
-            <div className="min-h-[89vh]">
+        <div className="container flex justify-center items-center  w-[90vw] min-h-[100vh]">
+            <div className=" max-w-[80vw]">
                 <div className="flex flex-col md:flex-row  min-h-[90vh] shadow-lg shadow-cyan-500/50 bg-white">
-                    <div className="md:w-1/2 md:pr-4 p-6">
+                    <div className="w-full md:w-1/2 md:pr-4 p-6">
                         <div className='image_logo pt-[20px]'>
                             <Link to="/">
                                 <img src={logo} className='object-cover w-[200px]' />
@@ -93,33 +83,33 @@ const MultiStepForm = () => {
                         <div className="progress-bar mt-[70px]">
                             <div className="progress" style={{ width: `${percentComplete}%` }}></div>
                         </div>
-                        <form onSubmit={handleSubmit} className='mt-[60px]'>
+                        <form onSubmit={handleSubmit} className='mt-[60px] h-auto sm:min-h-[64vh]'>
                             {currentStep === 1 && (
-                                <div className=''>
+                                <div className='h-[60vh]'>
                                     <h2 className='text-[30px] text-black sub_font font-bold'>{stepsTitles[currentStep - 1]}</h2>
                                     <div className="flex flex-wrap -mx-3 mb-6 pt-[40px]">
                                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                            <input className="appearance-none block w-full rounded mb-3 bord" name='name' id="name" type="text" placeholder="First Name " required onChange={handleInputChange}
+                                            <input className="appearance-none block w-full rounded mb-3 bord" name='name' id="name" type="text" placeholder="First Name " required
                                             />
                                         </div>
                                         <div className="w-full md:w-1/2 px-3">
-                                            <input className="appearance-none block w-full   rounded bord" id="text" type="text" name='name' placeholder="Last Name" required onChange={handleInputChange} />
+                                            <input className="appearance-none block w-full   rounded bord" id="text" type="text" name='name' placeholder="Last Name" required />
                                         </div>
                                     </div>
                                     <div className="flex flex-wrap -mx-3 mb-6">
                                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                            <input className="appearance-none block w-full  text-gray-700 rounded  mb-3 bord" name='email' id="email" type="Email" placeholder="Email" onChange={handleInputChange} />
+                                            <input className="appearance-none block w-full  text-gray-700 rounded  mb-3 bord" name='email' id="email" type="Email" placeholder="Email" />
                                         </div>
                                         <div className="w-full md:w-1/2 px-3">
-                                            <input className="appearance-none block w-full  rounded bord" id="password" type="password" placeholder="*********" required onChange={handleInputChange} />
+                                            <input className="appearance-none block w-full  rounded bord" id="password" type="password" placeholder="*********" required />
                                         </div>
                                     </div>
                                 </div>
                             )}
                             {currentStep === 2 && (
-                                <div className='step_2_form w-50'>
+                                <div className='step_2_form w-50 h-[60vh]'>
                                     <h2 className='text-[30px] text-black sub_font font-bold '>{stepsTitles[currentStep - 1]}</h2>
-                                    <div className="grid grid-cols-1 sm:grid-cols-1 w- lg:grid-cols-1 md-grid-cols-1 gap-4 pm-4 pt-[30px]">
+                                    <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 pm-4 pt-[30px]">
                                         <div className=''>
                                             <select
                                                 className="w-full mp-4"
@@ -247,7 +237,7 @@ const MultiStepForm = () => {
                                 </div>
                             )}
                             {currentStep === 3 && (
-                                <div className='main_div'>
+                                <div className='main_div h-[60vh]'>
                                     <h2 className='text-[30px] text-black sub_font font-bold '>{stepsTitles[currentStep - 1]}</h2>
                                     <div className='filters_section mt-[50px]'>
                                         <div className='Head_section'>
@@ -306,17 +296,17 @@ const MultiStepForm = () => {
 
                             )}
                             {currentStep === 4 && (
-                                <div>
+                                <div className='h-auto sm:h-[60vh]'>
                                     <h2 className='text-[30px] text-black sub_font font-bold '>{stepsTitles[currentStep - 1]}</h2>
                                     <CalendarTime required />
                                 </div>
                             )}
-                            <div className="flex justify-between mt-[50px] items-end">
+                            <div className="flex justify-between  items-end">
                                 {currentStep > 1 && (
                                     <button onClick={handlePrev} className="text-gray-800 font-bold py-2 px-4 rounded-lg text-[#8b7676]">Previous</button>
                                 )}
                                 {currentStep < 4 ? (
-                                    <button onClick={handleNext} disabled={!isFormValid} className="text-black font-bold py-2 px-4 rounded-lg">
+                                    <button onClick={handleNext} className="text-black font-bold py-2 px-4 rounded-lg">
                                         Next
                                     </button>
                                 ) : (

@@ -11,28 +11,28 @@ const Filter = () => {
     return (
         <div className="filter mt-[70px]">
             <div className="container w-full sm:w-[85%]">
-                <div className="inside_filter bg-[#000000] min-h-[60vh] p-[50px] rounded-[50px]">
+                <div className="inside_filter bg-[#000000] min-h-[60vh] p-[30px] sm:p-[50px] rounded-[50px]">
                     <div className="text-inside">
                         <h4 className="font-bold main_color sub_font">
                             Our Bread And Butter
                         </h4>
-                        <h2 className="text-white text-[40px] font-bold sub_font pt-6">
+                        <h2 className="text-white text-[20px] sm:text-[40px] font-bold sub_font pt-6">
                             Unleash The Power Of Community: <br />
                             Watch Your Brand Soar With Advocates
                         </h2>
-                        <p className="text-[#fff] opacity-80 sub_font text-[13px] pt-5 pr-[60px]">
+                        <p className="text-[#fff] opacity-80 sub_font text-[10px] sm:text-[20px] pt-5 pr-[60px]">
                             Our Product Is Designed For Growing Startups, Established Companies, And Influencers Seeking New Growth Opportunities And Increased Revenue, By Helping Them Increase Acquisition, Distribute Content, And Grow Revenue Efficiently.
                         </p>
                         <div className="inside_range w-full flex pt-4 justify-start flex-wrap justify-center">
 
-                            <div className="input_style mt-[60px]">
+                            <div className="input_style mt-[20px] sm:mt-[60px]">
                                 <div className="text_head text-center">
-                                    <h3 className="text-white font-bold sub_font text-[30px]">
+                                    <h3 className="text-white font-bold sub_font text-[20px] sm:text-[30px]">
                                         My Goal For Next Qoarter is
                                     </h3>
                                 </div>
                                 <div className="text-center">
-                                    <h4 className="main_color text-[40px] sub_font pt-5">
+                                    <h4 className="main_color text-[20px] sm:text-[40px] sub_font pt-5">
                                         ${rangeValue}
                                     </h4>
                                 </div>

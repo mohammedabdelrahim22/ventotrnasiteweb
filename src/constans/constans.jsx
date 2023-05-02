@@ -1,47 +1,54 @@
 import learn from '../assets/community/learn1.jpg'
 import spot from '../assets/spot/spot.png'
 import logo from '../assets/logo/logo.png'
-import icon from '../assets/brand/icon.svg'
+// import icon from '../assets/brand/icon.svg'
+import brand from '../assets/brand/brand.png'
+import brand2 from '../assets/brand/brand2.png'
+import brand3 from '../assets/brand/brand3.png'
+import brand4 from '../assets/brand/brand4.png'
+import brand5 from '../assets/brand/brand5.png'
+import brand6 from '../assets/brand/brand6.png'
+// import brand6 from '../assets/brand/brand6.png'
 export const Cards = [
     {
         id: "1",
         number: '1',
-        icon: icon,
+        icon: brand,
         title: "Define Your Target",
         desc: "Identify Your Desired Target For The Next Quarter."
     },
     {
         id: "2",
         number: '2',
-        icon: icon,
+        icon: brand2,
         title: "North Star",
         desc: "Set Goals And Metrics To Stay On Track."
     },
     {
         id: "3",
         number: '3',
-        icon: icon,
+        icon: brand3,
         title: "Convert More",
         desc: "Cultivate Community Through Belonging And Ugc."
     },
     {
         id: "4",
         number: '4',
-        icon: icon,
+        icon: brand4,
         title: "In-Depth Analysis",
         desc: "Cultivate Community Through Belonging And Ugc."
     },
     {
         id: "5",
         number: '5',
-        icon: icon,
+        icon: brand5,
         title: "Build & Sustain",
         desc: "Cultivate Community Through Belonging And Ugc."
     },
     {
         id: "6",
         number: '6',
-        icon: icon,
+        icon: brand6,
         title: "Succeed & Scale",
         desc: "Cultivate Community Through Belonging And Ugc."
     },
