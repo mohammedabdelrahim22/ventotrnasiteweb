@@ -53,8 +53,8 @@ function Community() {
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-1 mt-3 w-full relative items-baseline'>
-                    <div className='position_class p-5 bg-[#ddd] rounded-[20px]  w-[400px] h-[80px] absolute items-center flex justify-center  justify-around left-[7%] sm:left-[34%] top-[-8%] items-baseline'>
-                        <img src={logo} className='object-cover w-[150px]' />
+                    <div className='position_class p-5 bg-[#ddd] rounded-[20px]  w-[100%] sm:w-[60%] lg:w-[400px] md:w-[400px] h-[80px] absolute items-center flex justify-center  justify-around  left-[2%] sm:left-[20%] md:left-[30%] lg:left-[34%] top-[-8%] items-baseline'>
+                        <img src={logo} className='object-cover w-[150px] ' />
                         <h3 className='text-[30px] text-black sub_font'>
                             Community
                         </h3>

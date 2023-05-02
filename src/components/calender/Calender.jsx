@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import './calnder.css'
+import './calnder.css';
+
 const CalendarTime = () => {
     const [date, setDate] = useState(new Date());
 
@@ -9,11 +10,20 @@ const CalendarTime = () => {
         setDate(newDate);
     };
 
+    // تاريخ اليوم
+    const today = new Date();
+
+    // تاريخ المستقبل
+    const futureDate = new Date();
+    futureDate.setFullYear(today.getFullYear() + 3);
+
     return (
         <div className='grid grid-cols-1 sm:grid-cols-2 pt-5 w-[100%]'>
             <Calendar
                 onChange={handleDateChange}
                 value={date}
+                minDate={today}
+                maxDate={futureDate}
             />
             <div className='date_buttons  pl-[90px]'>
                 <div className='date_count w-[100%] h-[100%] mt-[30px]'>
@@ -29,7 +39,6 @@ const CalendarTime = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

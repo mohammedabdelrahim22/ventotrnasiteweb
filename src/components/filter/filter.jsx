@@ -39,7 +39,7 @@ const Filter = () => {
                                 <span className="min_numper text-[20px] p-2 text-[#fff]  opacity-75">$100,000</span>
                                 <input className="w-[300px] pl-3 pr-3"
                                     type="range"
-                                    min="100000"
+                                    min="10000"
                                     max="1000000"
                                     value={rangeValue}
                                     onChange={handleRangeChange}
